@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Message = () => {
+  const [first, setfirst] = useState(second);
+
   useEffect(() => {
     const onMouseMove = (event) => {
       const coords = { x, y };
@@ -8,8 +10,9 @@ export const Message = () => {
     };
 
     window.addEventListener("mousemove", onMouseMove);
+
     return () => {
-      console.log("Message Unmounted");
+      window.removeEventListener("mousemove", onMouseMove);
     };
   }, []);
 
