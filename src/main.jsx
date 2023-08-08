@@ -5,10 +5,11 @@ import "./index.css";
 // import { CounterWithCustomHook } from "./01-useState/CounterWithCustomHokk";
 // import { SimpleForm } from "./02-useEffect/SimpleForm";
 // import { HookApp } from "./HooksApp";
-import { FormWihtCustomHook } from "./02-useEffect/FormWihtCustomHook";
+// import { FormWihtCustomHook } from "./02-useEffect/FormWihtCustomHook";
+import { MultipleCustomHooks } from "./03-examples/MultipleCustomHooks";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
-  <FormWihtCustomHook />
+  <MultipleCustomHooks />
   // {/* </React.StrictMode> */}
 );
