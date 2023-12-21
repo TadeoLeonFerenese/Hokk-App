@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from "react";
-import { todoReducer } from "./todoReducer";
+import { todoReducer } from "../08-useReducer/todoReducer";
 
 const createAddTodoAction = (todo) => ({
   type: "[TODO] Add Todo",
