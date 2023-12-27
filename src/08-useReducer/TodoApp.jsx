@@ -12,7 +12,7 @@ export const TodoApp = () => {
   return (
     <>
       <h1>
-        TodoApp 10, <small>pendientes: 2</small>
+        TodoApp, <small>pendientes: </small>
       </h1>
       <hr />
 

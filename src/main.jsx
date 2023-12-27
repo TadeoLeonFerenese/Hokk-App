@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 // import { CounterApp } from "./01-useState/CounterApp";
 // import { CounterWithCustomHook } from "./01-useState/CounterWithCustomHokk";
 // import { SimpleForm } from "./02-useEffect/SimpleForm";
@@ -15,10 +16,13 @@ import "./index.css";
 // import { Padre } from "./07-tarea-memo/Padre";
 // import "./08-useReducer/intro-Reducer";
 
-import { TodoApp } from "./08-useReducer/TodoApp";
+// import { TodoApp } from "./08-useReducer/TodoApp";
+import { MainApp } from "./09-useContext/MainApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  //   // <React.StrictMode>
-  <TodoApp />
-  //   // {/* </React.StrictMode> */}
+  <BrowserRouter>
+    {/* <React.StrictMode> */}
+    <MainApp />
+    {/* </React.StrictMode> */}
+  </BrowserRouter>
 );
